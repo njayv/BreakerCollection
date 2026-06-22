@@ -1,18 +1,8 @@
-# FunkinGodot
-
-[Friday Night Funkin'](https://github.com/FunkinCrew/Funkin) modding framework made
-in the [Godot Game Engine](https://godotengine.org) to be a useful project in making
-whatever you want. It comes with stable, fast performance and easier creation thanks
-to building on and working with Godot's systems.
-
-To get a feel for the gameplay as-is, try out one of the [precompiled releases](https://github.com/cherrythecool/FunkinGodot/releases/latest) with some
-songs from the base game.
-
-To make a mod just download [Godot](https://godotengine.org/download) and the source code from
-this repository. Then, import the project into Godot and get started! Documentation is
-currently scarce, but will be worked on in the future (and until then, you can always submit issues).
-
-## Credits
-
-See [CREDITS](CREDITS.md) (or in game) for the credits of different people/groups that
-have put a contribution into making this all possible!
+# Weclome to Breaker Collection!
+## Info:
+Breaker Collection is a WIP modpack that includes a load of official (and fan-made) DX songs! This mod is *currently* being worked on by one person (me) but builds will be uploaded quite frequently to test things!
+## Credits:
+For now, credits are lacking because... well... there's nothing in this mod... *yet*.
+- Funkin' Godot: https://github.com/cherrythecool/funkin_godot
+- Friday Night Funkin': https://github.com/FunkinCrew/Funkin
+- Godot: https://github.com/godotengine
