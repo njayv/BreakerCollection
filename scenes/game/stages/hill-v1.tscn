@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://csigngbh8wkwv"]
+
+[ext_resource type="Script" uid="uid://bn5n82vuwrrl8" path="res://scenes/game/stages/stage.gd" id="1_xsub1"]
+[ext_resource type="Texture2D" uid="uid://5crk3atapipw" path="res://assets/game/stages/hill-v1/Sky.png" id="2_aiv4h"]
+[ext_resource type="Script" uid="uid://dvnwbtnvi747m" path="res://scenes/game/stages/character_preview.gd" id="2_bf2kp"]
+[ext_resource type="Texture2D" uid="uid://bk6aysae01sll" path="res://assets/game/stages/hill-v1/Hills.png" id="3_gcdct"]
+[ext_resource type="Texture2D" uid="uid://bainumjgteoqv" path="res://assets/game/stages/hill-v1/Trees.png" id="4_ujxdh"]
+[ext_resource type="Texture2D" uid="uid://bonslq70y05oq" path="res://assets/game/stages/hill-v1/Pillar1.png" id="5_bprxa"]
+[ext_resource type="Texture2D" uid="uid://dgaj2dah4fv6e" path="res://assets/game/stages/hill-v1/Pillar2.png" id="6_fbwp6"]
+[ext_resource type="Texture2D" uid="uid://dxkl7lld0wl2l" path="res://assets/game/stages/hill-v1/Ground.png" id="7_j8mno"]
+
+[node name="template" type="Node2D" unique_id=741115307]
+script = ExtResource("1_xsub1")
+default_zoom = 0.9
+
+[node name="Sky" type="Parallax2D" parent="." unique_id=1588701934]
+
+[node name="sprite" type="Sprite2D" parent="Sky" unique_id=2141754677]
+position = Vector2(640, 320)
+texture = ExtResource("2_aiv4h")
+
+[node name="Hills" type="Parallax2D" parent="." unique_id=1414379795]
+scroll_scale = Vector2(0.8, 0.8)
+
+[node name="sprite" type="Sprite2D" parent="Hills" unique_id=1804896652]
+position = Vector2(640, 320)
+texture = ExtResource("3_gcdct")
+
+[node name="Trees" type="Parallax2D" parent="." unique_id=375525068]
+scroll_scale = Vector2(0.9, 0.9)
+
+[node name="sprite" type="Sprite2D" parent="Trees" unique_id=950194089]
+position = Vector2(640, 640)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_ujxdh")
+
+[node name="Pillars" type="Parallax2D" parent="." unique_id=1699905056]
+
+[node name="sprite1" type="Sprite2D" parent="Pillars" unique_id=1757799444]
+position = Vector2(64, 96)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_bprxa")
+
+[node name="sprite2" type="Sprite2D" parent="Pillars" unique_id=1591594596]
+position = Vector2(1152, 128)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_fbwp6")
+
+[node name="Ground" type="Parallax2D" parent="." unique_id=678213858]
+screen_offset = Vector2(77.54846, -88.224335)
+
+[node name="sprite" type="Sprite2D" parent="Ground" unique_id=119135595]
+position = Vector2(832, 610)
+texture = ExtResource("7_j8mno")
+
+[node name="spectator" type="Marker2D" parent="." unique_id=1964904064]
+position = Vector2(625, 750)
+script = ExtResource("2_bf2kp")
+character_path = "uid://bragoy3tisav2"
+
+[node name="player" type="Marker2D" parent="." unique_id=1242627047]
+position = Vector2(1000, 800)
+script = ExtResource("2_bf2kp")
+
+[node name="opponent" type="Marker2D" parent="." unique_id=1894938374]
+position = Vector2(256, 800)
+script = ExtResource("2_bf2kp")
+character_path = "uid://cdlt4jc7j8122"
