@@ -1,25 +1,3 @@
-# godot (4.0+) specific ignores
+# Godot 4+ specific ignores
 .godot/
-~**
-**.tmp
-
-# annoying ass shit from deleting files idk
-.fuse_hidden**
-
-# my export folder lol
-bin/
-
-# my secret plans muahahahaha
-plans/
-
-# custom songs i keep off main repo cuz bloat lmao
-assets/songs/extra/
-
-# backup files
-**~
-
-# vscode shit
-.vscode
-
-# macOS stuf
-**.DS_Store
+/android/
