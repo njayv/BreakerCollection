@@ -9,6 +9,7 @@ shader = ExtResource("1_jo7ew")
 layer = 0
 
 [node name="color_rect" type="ColorRect" parent="." unique_id=638678164]
+visible = false
 material = SubResource("ShaderMaterial_h30eh")
 anchors_preset = 15
 anchor_right = 1.0

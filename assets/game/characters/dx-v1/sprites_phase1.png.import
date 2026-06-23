@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://di2n6ifo1d1ow"
-path="res://.godot/imported/sprite_phase1.png-f7c2e66a536da6f079b01d0c46ae9471.ctex"
+path="res://.godot/imported/sprites_phase1.png-42554c1c92f0c4d27fbf89adbab6509f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/game/characters/dx-v1/sprite_phase1.png"
-dest_files=["res://.godot/imported/sprite_phase1.png-f7c2e66a536da6f079b01d0c46ae9471.ctex"]
+source_file="res://assets/game/characters/dx-v1/sprites_phase1.png"
+dest_files=["res://.godot/imported/sprites_phase1.png-42554c1c92f0c4d27fbf89adbab6509f.ctex"]
 
 [params]
 
