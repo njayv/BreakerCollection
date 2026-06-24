@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="SongAssets" format=3 uid="uid://cx84dwlwqgqf4"]
+
+[ext_resource type="PackedScene" uid="uid://d45qnjn2ttby" path="res://scenes/game/characters/dx_phase1-v1.tscn" id="1_oow8x"]
+[ext_resource type="Resource" uid="uid://pv1ounxci6y8" path="res://assets/game/skins/pixel/note_skin.tres" id="2_lolrs"]
+[ext_resource type="PackedScene" uid="uid://hyrd33rtuihg" path="res://scenes/game/characters/dxpico-v1.tscn" id="3_u87j7"]
+[ext_resource type="Script" uid="uid://dk2lxfhv5lvf4" path="res://scripts/resources/songs/assets.gd" id="4_ok22c"]
+[ext_resource type="PackedScene" uid="uid://l1dqw6ovt7lg" path="res://scenes/game/characters/null.tscn" id="5_x43ee"]
+[ext_resource type="PackedScene" uid="uid://csigngbh8wkwv" path="res://scenes/game/stages/hill-v1.tscn" id="6_vsah8"]
+
+[resource]
+script = ExtResource("4_ok22c")
+player = ExtResource("3_u87j7")
+spectator = ExtResource("5_x43ee")
+opponent = ExtResource("1_oow8x")
+stage = ExtResource("6_vsah8")
+opponent_note_skin = ExtResource("2_lolrs")
