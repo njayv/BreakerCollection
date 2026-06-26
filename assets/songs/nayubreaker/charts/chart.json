@@ -5,6 +5,14 @@
 	},
 	"events": [
 		{
+			"t": 0.0,
+			"e": "changecharacter",
+			"v": {
+				"target": "dad",
+				"character": "dx_phase2-v1"
+			}
+		},
+		{
 			"t": 1862.06896551724,
 			"e": "FocusCamera",
 			"v": {

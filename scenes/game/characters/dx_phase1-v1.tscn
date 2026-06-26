@@ -482,7 +482,7 @@ _data = {
 &"sing_up": SubResource("Animation_m87l6")
 }
 
-[node name="template" type="Node2D" unique_id=1359318850]
+[node name="dx_phase1-v1" type="Node2D" unique_id=1359318850]
 script = ExtResource("1_5jj0i")
 icon = SubResource("Resource_cf3ry")
 

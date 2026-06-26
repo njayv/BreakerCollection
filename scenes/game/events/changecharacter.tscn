@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://enjgjybjr4ey"]
+
+[ext_resource type="Script" uid="uid://d3p2bh2hcs7qe" path="res://scenes/game/events/changecharacter.gd" id="1_t2jrs"]
+
+[node name="changecharacter" type="Node" unique_id=1428824881]
+script = ExtResource("1_t2jrs")
+metadata/_custom_type_script = "uid://ccygr6542u5ga"
