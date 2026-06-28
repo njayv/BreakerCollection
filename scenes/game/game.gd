@@ -307,6 +307,64 @@ func load_assets() -> void:
 		assets = SongAssets.new()
 
 
+func replace_character(target: String, character_path: String) -> Character:
+	var target_name: String = target.to_lower()
+	var old_character: Character = null
+	var target_field: NoteField = null
+	var is_player_slot: bool = false
+	
+	print(target_field)
+
+	match target_name:
+		"bf", "boyfriend":
+			old_character = player
+			target_field = player_field
+			is_player_slot = true
+		"gf", "girlfriend":
+			old_character = spectator
+		"dad":
+			old_character = opponent
+			target_field = opponent_field
+			is_player_slot = false
+		_:
+			push_warning("Unknown character target '%s'" % target)
+			return null
+
+	if not ResourceLoader.exists(character_path):
+		push_warning("Character scene not found: %s" % character_path)
+		return null
+
+	var scene: PackedScene = load(character_path)
+	var new_character: Character = scene.instantiate()
+	new_character.swap_sing_animations = is_player_slot != new_character.starts_as_player
+
+	if is_instance_valid(old_character):
+		new_character.global_position = old_character.global_position
+		new_character.scale = old_character.scale
+		new_character.z_index = old_character.z_index
+
+		var parent: Node = old_character.get_parent()
+		if not is_instance_valid(parent):
+			parent = characters_container
+		parent.add_child(new_character)
+		old_character.queue_free()
+	else:
+		characters_container.add_child(new_character)
+
+	match target_name:
+		"bf", "boyfriend":
+			player = new_character
+		"gf", "girlfriend":
+			spectator = new_character
+		"dad":
+			opponent = new_character
+
+	if is_instance_valid(target_field):
+		target_field.target_character = new_character
+
+	return new_character
+
+
 func load_from_assets() -> void:
 	## Gameplay assets
 	player = assets.get_player().instantiate()
